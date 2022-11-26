@@ -9,6 +9,8 @@ import { MotionPlugin } from "@vueuse/motion";
 // import { useTable } from "@/plugins/vxe-table";
 import { injectResponsiveStorage } from "@/utils/responsive";
 
+import "./preload/node-api";
+
 // import Table from "@pureadmin/table";
 // import PureDescriptions from "@pureadmin/descriptions";
 

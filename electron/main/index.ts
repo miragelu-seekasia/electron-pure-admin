@@ -8,6 +8,8 @@
 // ├─┬ dist
 // │ └── index.html    > Electron-Renderer
 //
+import "./ipc";
+
 process.env.DIST_ELECTRON = join(__dirname, "..");
 process.env.DIST = join(process.env.DIST_ELECTRON, "../dist");
 process.env.PUBLIC = app.isPackaged
@@ -42,6 +44,8 @@ const indexHtml = join(process.env.DIST, "index.html");
 
 async function createWindow() {
   win = new BrowserWindow({
+    width: 1200,
+    height: 680,
     title: "Main window",
     icon: join(process.env.PUBLIC, "favicon.ico"),
     webPreferences: {
